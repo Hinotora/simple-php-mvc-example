@@ -1,0 +1,7 @@
+# This file makes Apache Web Server redirect every request to /public/index.php
+# You can use NGINX as well, but you need to redirect every request to /public/index.php
+
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+RewriteRule ^ %1 [L,NE,R=302]
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]

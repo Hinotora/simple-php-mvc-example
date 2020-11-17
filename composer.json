@@ -1,0 +1,14 @@
+{
+    "name": "hinotora/simple-php-mvc",
+    "type": "project",
+    "require": {
+        "twig/twig": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/",
+            "App\\Controllers\\": "app/controllers/",
+            "App\\Models\\": "app/models/"
+        }
+    }
+}
