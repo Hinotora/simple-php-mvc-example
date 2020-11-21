@@ -2,6 +2,7 @@
     "name": "hinotora/simple-php-mvc",
     "type": "project",
     "require": {
+	"php" : ">=7.4",
         "twig/twig": "^3.1"
     },
     "autoload": {
